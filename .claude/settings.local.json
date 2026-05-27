@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(fsutil behavior query symlinkevaluation 2>&1)",
+      "PowerShell($LASTEXITCODE = 0)",
+      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\Windows Kits\\\\10\\\\bin\\\\10.0.26100.0\\\\x64\\\\mt.exe\" -manifest \"d:\\\\.sc\\\\switch_network\\\\windows\\\\runner\\\\runner.exe.manifest\" -outputresource:\"d:\\\\.sc\\\\switch_network\\\\build\\\\windows\\\\x64\\\\runner\\\\Release\\\\switch_network.exe\" 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\Windows Kits\\\\10\\\\bin\\\\10.0.26100.0\\\\x64\\\\mt.exe\" -inputresource:\"d:\\\\.sc\\\\switch_network\\\\build\\\\windows\\\\x64\\\\runner\\\\Release\\\\switch_network.exe\" -out:d:\\\\.sc\\\\switch_network\\\\installer\\\\extracted.manifest 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\Windows Kits\\\\10\\\\bin\\\\10.0.26100.0\\\\x64\\\\mt.exe\" -manifest \"d:\\\\.sc\\\\switch_network\\\\installer\\\\admin.manifest\" -outputresource:\"d:\\\\.sc\\\\switch_network\\\\build\\\\windows\\\\x64\\\\runner\\\\Release\\\\switch_network.exe\" 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\Windows Kits\\\\10\\\\bin\\\\10.0.26100.0\\\\x64\\\\mt.exe\" -inputresource:\"d:\\\\.sc\\\\switch_network\\\\build\\\\windows\\\\x64\\\\runner\\\\Release\\\\switch_network.exe\" -out:\"d:\\\\.sc\\\\switch_network\\\\installer\\\\extracted.manifest\" 2>&1)",
+      "PowerShell(winget install \"Inno Setup\" --accept-source-agreements --silent 2>&1)",
+      "PowerShell(winget install JRSoftware.InnoSetup --accept-source-agreements --silent 2>&1)"
+    ]
+  }
+}
